@@ -1,0 +1,351 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+footer{
+    position:static;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*  background-color: #743f90;*/
+    /* opacity:0.7;*/
+    color: black;
+    padding: 10px 20px;
+    font-size: 80px;
+    text-align: center;
+    /*    font-family:'Comic Sans MS';
+*/ font-family: Vivaldi;
+}
+
+.main-img {
+    opacity: 0.5;
+}
+
+.display-4 {
+    font-style: italic;
+    font-family: Vivaldi;
+    margin: 20px;
+    padding: 20px;
+}
+
+.article {
+    display: inline-flex;
+    margin: 40px 10px;
+}
+
+.title-art {
+    font-family: Vivaldi;
+    font-style: italic;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.article .image {
+    padding: 30px;
+    position: relative;
+    height: 300px;
+    width: 95%;
+    margin: 0px 20px;
+}
+/* .article .image:hover {
+        transform: translateY(-10px);
+    }*/
+
+#article1, #article2, #article3 {
+    background-color: #fbeaea;
+    margin: 20px;
+    border-radius: 17px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+#article3, #article1, #article2 {
+    width: 50%;
+}
+
+
+.description {
+    text-align:center;
+    font-family: Vivaldi;
+    font-size: 19px;
+    color: #69324d;
+    text-shadow: 2px 1px 1px white;
+    padding:10px;
+}
+
+#article3:hover {
+    transform: scale(1.1);
+    /*    Методът увеличава или намалява размера на даден елемент (според параметрите, дадени за ширината и височината)
+*/
+}
+
+#article1:hover {
+    transform: scale(1.1);
+    /*    Методът увеличава или намалява размера на даден елемент (според параметрите, дадени за ширината и височината)
+*/
+}
+
+#article2:hover {
+    transform: scale(1.1);
+    /*    Методът увеличава или намалява размера на даден елемент (според параметрите, дадени за ширината и височината)
+*/
+}
+
+.txt {
+    text-align: center;
+    font-size: 30px;
+    font-family: Vivaldi;
+    margin: 20px;
+    padding: 20px;
+    font-style: italic;
+}
+
+.form_cont {
+    background-color: #fbeaea;
+    width: 50%;
+    height: 480px;
+    margin: 20px;
+    padding: 20px;
+    float: left;
+    box-shadow: #69324d 5px 5px;
+}
+
+.info_cont {
+    height: 200px;
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fbeaea;
+    float: right;
+    box-shadow: #69324d 5px 5px;
+    font-family: Vivaldi;
+    font-size: 20px;
+}
+
+.cont {
+    display: inline-flex;
+    width: 100%;
+}
+
+legend, label {
+    font-family: 'Times New Roman';
+    text-align: center;
+}
+
+.cont form_cont input[type=text], input[type=email], input[type=submit] {
+    font-family: 'Times New Roman';
+}
+
+/*h1 {
+    font-family: Vivaldi;
+    font-style: italic;
+    text-align: center;
+}*/
+
+.forus {
+    background-color: #fbeaea;
+    border-radius: 5px 5px;
+    height: 450px;
+    width: 70%;
+    margin: 20px;
+    padding: 20px;
+}
+
+    .forus h1, img {
+        float: left;
+        font-family: Vivaldi;
+    }
+
+
+    .forus img {
+        width: 40%;
+        height: 340px;
+    }
+
+    .forus p {
+        float: right;
+        font-family: Vivaldi;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+.quote {
+    width: 80%;
+    height: 100px;
+}
+
+    .quote p {
+        font-family: 'Comic Sans MS';
+        font-size: 25px;
+    }
+
+.contactUs {
+    width: 60%;
+    height: 320px;
+}
+
+    .contactUs img {
+        float: left;
+        height: 300px;
+        width: 50%;
+    }
+
+    .contactUs p {
+        float: right;
+        font-family: Vivaldi;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    .contactUs button_cont {
+        background-color: #fbeaea;
+        border-radius: 5px 5px;
+        width: 20%;
+        height: 50px;
+    }
+
+        .contactUs button_cont p {
+            font-family: Vivaldi;
+            font-size: 20px;
+            font-style: italic;
+            margin: 10px;
+            padding: 10px;
+        }
+
+
+iframe {
+    margin: 10px;
+    padding: 10px;
+}
+
+.map {
+    float: left;
+}
+
+.card{
+    display:inline-flex;
+    margin:20px;
+    padding:5px 5px;
+    height:400px;
+    width:10%;
+}
+.card-title{
+    font-family:Vivaldi;
+    font-size:20px;
+    text-align:center;
+}
+.card-subtitle{
+    text-align:center;
+}
+
+h1{
+    font-family:Vivaldi;
+    font-size:40px;
+}
+.service{
+    width:100%;
+    height:100px;
+    display:inline-flex;
+    background-color:#fbeaea;
+    
+}
+.serv{
+    margin-top:20px;
+}
+.serv img{
+ margin:10px;
+ padding:10px;
+ width:50px;
+ height:50px;
+}
+
+.order_index{
+    height:300px;
+    width:40%;
+    display:inline-flex;
+    background-color:#f7e5e5;
+    margin:20px;
+    padding:20px;
+}
+.order img{
+ float:left;
+ height:250px;
+ width:50%;
+ margin:5px;
+ padding:5px;
+}
+.info_order{
+    float:right;
+    padding:10px;
+    margin:10px;
+}
+.order_links{
+    margin-top:150px;
+}
+.order_links a img{
+    width:10px;
+    height:10px;
+    display:inline-flex;
+}
+
+.overlay_product {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 80px;
+    text-align: center;
+}
+.card:hover .overlay_product {
+    opacity: 0.9;
+}
+span{
+    width:20px;
+    height:20px;
+}
+.product{
+    height:350px;
+    width:80%;
+}
+.product_img img{
+    height:300px;
+    width:40%;
+    margin:20px;
+    padding:20px;
+    float:left;
+}
+.product_info{
+    font-size:28px;
+    font-family:Vivaldi;
+    margin:20px;
+    padding:30px;
+}

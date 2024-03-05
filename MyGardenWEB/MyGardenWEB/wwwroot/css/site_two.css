@@ -1,0 +1,36 @@
+.btn-primary {
+    background-color: #ffdede;
+    color: black;
+    margin: 5px;
+    text-align:center;
+}
+.btn-primary:hover {
+    background-color: #ffc6c6;
+    color: black;
+}
+.navbar {
+    background: linear-gradient(to right ,#ffffff,#fff1f1, #ffdede);
+}
+.navbar a:hover{
+    background-color:#ffdede;
+    border-radius:3px;
+}
+.login_acc{
+    background-color:#fee8e8;
+    height:500px;
+    width:100%;
+    margin:10px;
+    padding:20px;
+    border-radius:5px;
+}
+h2{
+    font-family:Vivaldi;
+}
+.register_acc {
+    background-color: #fee8e8;
+    height: 650px;
+    width: 100%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+}

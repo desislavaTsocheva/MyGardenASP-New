@@ -1,0 +1,39 @@
+﻿@model MyGardenWEB.Data.Product
+
+@{
+    ViewData["Title"] = "Details";
+
+}
+
+<h1>Детайли за продукт</h1>
+
+<div class="product">
+    <div class="product_img">
+        <img src="@Html.DisplayFor(model => model.PhotoURL)" />
+    </div>
+    <div class="product_info">
+        @Html.DisplayFor(model => model.BulgarianName)  /@Html.DisplayFor(model => model.LatinName)/ <br />
+        <label>Размер: </label> @Html.DisplayFor(model => model.Size);<br />
+        <label>Цена: </label> @Html.DisplayFor(model => model.Price);
+    </div>
+    <div class="buttons">
+        <a class="btn btn-primary" asp-controller="Orders" asp-action="Create" asp-route-id="Id">Поръчай</a>
+    </div>
+</div>
+   
+<h4>Описание</h4>
+<hr />
+@Html.DisplayFor(model => model.Description)
+<br />
+<br />
+@if (User.IsInRole("Admin"))
+{
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Редактиране</a>
+    <a asp-action="Index">Връщане назад</a>
+
+}
+else
+{
+    <a asp-action="Index">Връщане назад</a>
+}
+
