@@ -67,7 +67,7 @@ namespace MyGardenWEB.Controllers
 
             ViewData["ProductsId"] = new SelectList(_context.Products, "Id", "BulgarianName");
             
-            _context.Photos.Add(photo);
+            //_context.Photos.Add(photo);
             //await _context.SaveChangesAsync();
             //return RedirectToAction(nameof(Index)); 
             //}

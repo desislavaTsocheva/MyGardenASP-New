@@ -13,7 +13,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Products)
+                @Html.DisplayNameFor(model => model.Products.BulgarianName)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Url)
@@ -29,13 +29,10 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Products.Id)
+                    @Html.DisplayFor(modelItem => item.Products.BulgarianName)
                 </td>
                 <td>
-                    @foreach (var photo in item.Files)
-                    {
                         <img src="@Html.DisplayFor(modelItem => item.Url)" />
-                    }
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.RegisterOn)
@@ -47,5 +44,6 @@
                 </td>
             </tr>
         }
+        
     </tbody>
 </table>

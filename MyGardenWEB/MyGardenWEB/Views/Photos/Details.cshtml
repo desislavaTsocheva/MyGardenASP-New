@@ -29,6 +29,14 @@
             @Html.DisplayFor(model => model.RegisterOn)
         </dd>
     </dl>
+@*     <div class="img-fluid">
+        @foreach (var item in Model.Files)
+        {
+            <div>
+                <img class="rounded float-sm-right justify-content-md-center" width="200" src="@item" alt="Image for @Model.Url" />
+            </div>
+        }
+    </div> *@
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Редактиране</a> |
